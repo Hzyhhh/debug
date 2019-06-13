@@ -12,7 +12,12 @@ const Demo = () => {
 
   return (
     <div>
-      <input value={name} onChange={e=>{setState(e.target.value)}}/>
+      <input
+        value={name}
+        onChange={e => {
+          setState(e.target.value)
+        }}
+      />
       <h2>{name}</h2>
       <p>{prevName}</p>
     </div>

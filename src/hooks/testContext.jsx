@@ -4,13 +4,9 @@ import React, { useState, useContext, createContext } from 'react'
 const UserContext = createContext()
 
 // 2. 创建 Provider
-const UserProvider = (props)=>{
-  let [username, handleChangeUsername] = useState("")
-  return (
-  <UserContext.Provider value={{username, handleChangeUsername}} >
-    {props.children}
-  </UserContext.Provider>
-  )
+const UserProvider = props => {
+  let [username, handleChangeUsername] = useState('')
+  return <UserContext.Provider value={{ username, handleChangeUsername }}>{props.children}</UserContext.Provider>
 }
 
 const UserConsumer = UserContext.Consumer

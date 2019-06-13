@@ -1,11 +1,11 @@
-import React, { useReducer } from 'react';
+import React, { useReducer } from 'react'
 
-const initialState = 'adfa';
-const reducer = (state, action) => action;
+const initialState = 'adfa'
+const reducer = (state, action) => action
 
 const Example04 = () => {
-  const [firstName, changeFirstName] = useReducer(reducer, initialState);
-  const [lastName, changeLastName] = useReducer(reducer, initialState);
+  const [firstName, changeFirstName] = useReducer(reducer, initialState)
+  const [lastName, changeLastName] = useReducer(reducer, initialState)
   return (
     <>
       <div>
@@ -17,12 +17,12 @@ const Example04 = () => {
         <TextInput value={lastName} onChangeText={changeLastName} />
       </div>
     </>
-  );
-};
+  )
+}
 
 // ref: https://facebook.github.io/react-native/docs/textinput
 const TextInput = ({ value, onChangeText }) => (
   <input type="text" value={value} onChange={e => onChangeText(e.target.value)} />
-);
+)
 
-export default Example04;
+export default Example04
