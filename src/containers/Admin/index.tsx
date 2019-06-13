@@ -9,6 +9,7 @@ import UseMemoDemo from '~/hooks/testMemo'
 import UseConTextDemo from '~/hooks/testContext'
 import UseHoverDemo from '~/hooks/testHover'
 import UseReducer from '~/hooks/testReducer'
+import UseInputValue from '~/hooks/testInputValue'
 
 export class App extends React.Component<{}, {}> {
   public render() {
@@ -20,6 +21,7 @@ export class App extends React.Component<{}, {}> {
         <UseConTextDemo />
         <UseHoverDemo />
         <UseReducer />
+        <UseInputValue />
       </>
     )
   }
