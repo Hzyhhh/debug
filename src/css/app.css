@@ -1,0 +1,7 @@
+@import url('~./common.css');
+@import '~antd/dist/antd.css';
+.app {
+}
+Button {
+    margin-left: 3px
+}
