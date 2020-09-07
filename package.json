@@ -1,6 +1,7 @@
 {
   "name": "debug",
   "version": "0.1.0",
+  "homepage": "https://hzyhhh.github.com/debug",
   "private": true,
   "dependencies": {
     "@gdjiami/gzb-jssdk": "^1.6.2",
@@ -18,6 +19,7 @@
     "@types/react-dom": "16.0.7",
     "@types/react-hot-loader": "^4.1.0",
     "@types/webpack-env": "^1.13.9",
+    "gh-pages": "^3.1.0",
     "husky": "^2.2.0",
     "prettier": "^1.17.0",
     "pretty-quick": "^1.10.0"
@@ -27,7 +29,9 @@
     "build": "jm build",
     "serve": "jm serve",
     "analyze": "jm analyze",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "predeploy": "jm build",
+    "deploy": "gh-pages -d build"
   },
   "husky": {
     "hooks": {
